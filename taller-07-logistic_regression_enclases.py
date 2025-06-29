@@ -38,7 +38,6 @@ print (y)
 print (str(model.predict_proba(x_eval)))
 print (str(model.predict(x_eval)))
 
-
 cm_1 = confusion_matrix(y_eval, model.predict(x_eval), labels=model.classes_)
 #esta funcion construye el grafico de la matriz de confusion
 disp = ConfusionMatrixDisplay(confusion_matrix=cm_1,display_labels=model.classes_)
